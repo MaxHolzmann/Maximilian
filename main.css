@@ -4,15 +4,20 @@ Style navbar text to complete the look
 
 */ 
 
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 body {
- background-color: #E5E5E5;
  display: flex;
+ background-color: #E5E5E5;
  flex-direction: column;
  align-items: center;
 }
 
+/* CSS for Navbar */ 
+
 .navbar-title {
     display: flex;
+    font-family: Roboto;
 }
 
 .navbar-links {
@@ -20,6 +25,11 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
+    font-family: Roboto;
+}
+
+.navbar-links, a:visited, a:link, a:hover, a:active {
+    text-decoration: none;
 }
 
 .navbar {
@@ -27,20 +37,55 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    width: 60%;
+    width: 50%;
     padding: 5px;
+    
 
     background-color: white;
 
     border-radius: 7px;
-    border: 2px solid black;
+    border: 2px solid blue;
 }
 
+/* CSS for introduction section   */
 
 .introduction {
     display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    width: 80%;
     background-color: white;
-    border: 2px solid #FCA311;
+    border: 2px solid blue;
     border-radius: 5px;
+}
+
+.introduction-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-heading {
+    font-size: 32px;
+    padding: 10px;
+    font-family: Roboto;
+}
+
+.intro-paragraph { 
+    font-family: Roboto;
+    font-size: 24px;
+}
+
+.profile-img {
+    object-fit: contain;
+    width: 30%;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -3px rgba(0,0,0,0.38);
+}
+
+.profile-img:hover {
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.38);
 }
 
