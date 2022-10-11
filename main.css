@@ -61,9 +61,12 @@ a.navlink:hover {
 
 .introduction {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 10px;
     padding: 10px;
+    flex: 1 1 50%;
+
 
     object-fit: contain;
     background-color: lightgray;
@@ -91,15 +94,13 @@ a.navlink:hover {
     display: flex;
     flex-wrap: wrap;
     font-family: Roboto;
-    font-size: 150%;
+    font-size: 175%;
 }
 
-/* fix this, I need it to shrink without creating an ugly border look. potentially media quiries?, or at flex grow/shrink/basis */ 
 .profile-img {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 27%;
     height: fit-content;
+    max-width: 43%;
 
     margin: 20px;
     border-radius: 10px;
