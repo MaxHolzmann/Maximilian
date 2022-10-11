@@ -8,10 +8,12 @@ Style navbar text to complete the look
 
 body {
  display: flex;
- background-color: #E5E5E5;
+ background-color: white;
  flex-direction: column;
  align-items: center;
 }
+
+
 
 /* CSS for Navbar */ 
 
@@ -27,6 +29,7 @@ body {
     width: 50%;
     font-family: Roboto;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 .navbar-links, a:visited, a:link, a:active {
@@ -35,7 +38,7 @@ body {
 }
 
 a.navlink:hover {
- color: blue;
+ color: white;
 }
 
 .navbar {
@@ -47,28 +50,35 @@ a.navlink:hover {
     padding: 5px;
     
 
-    background-color: white;
+    background-color: lightgray;
 
     border-radius: 7px;
-    border: 2px solid blue;
 }
+
+
 
 /* CSS for introduction section   */
 
 .introduction {
     display: flex;
     justify-content: space-evenly;
-    margin: 5px;
+    margin: 10px;
+    padding: 10px;
+
+    object-fit: contain;
+    background-color: lightgray;
     width: 70%;
-    background-color: white;
-    border: 2px solid blue;
-    border-radius: 5px;
+
+    border-radius: 7px;
 }
 
 .introduction-text-block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 50%;
 }
 
 .intro-heading {
@@ -78,15 +88,20 @@ a.navlink:hover {
 }
 
 .intro-paragraph { 
+    display: flex;
+    flex-wrap: wrap;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 150%;
 }
 
+/* fix this, I need it to shrink without creating an ugly border look. potentially media quiries?, or at flex grow/shrink/basis */ 
 .profile-img {
-    object-fit: contain;
-    width: 30%;
     display: flex;
-    margin: 10px;
+    flex-wrap: wrap;
+    max-width: 27%;
+    height: fit-content;
+
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 0px 10px 20px -3px rgba(0,0,0,0.38);
 }
